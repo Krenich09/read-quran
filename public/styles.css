@@ -1,0 +1,155 @@
+:root
+{
+    --min-font-size: 2px; 
+    --max-font-size: 3px;
+
+    --main_bg: #4d6d51;
+    --second_bg: #ECECEC;
+    --third_bg: #F1FFFA;
+    
+
+}
+body
+{
+    min-height: 100vh;
+    margin: 0;
+    background-color: var(--main_bg);
+}
+.amiri-quran-regular {
+    font-family: "Amiri Quran", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.content {
+    margin: 10px auto; /* Center the content horizontally */
+    padding: 30px;
+    width: 55%;
+    border-radius: 7px;
+    background-color: var(--third_bg);
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+.title
+{
+    display: flex;
+    justify-content: center;
+}
+
+.arabic-text
+{
+    border-radius: 3px;
+    color: none;
+    padding: 3px;
+    transition: color 0.1s;
+    cursor:pointer;
+}
+.arabic-text:hover
+{
+    color: #890808;
+}
+
+
+.ayah
+{
+    align-items: center;
+    text-align: center;
+}
+
+*
+{
+    font-size: 35px;
+}
+h2
+{
+    font-size: 45px !important;
+}
+.number
+{
+    margin: 7px;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+
+#translation-en {
+    margin: 0;
+    font-family: "Reddit Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+    /* Adjust the formula below to suit your specific needs */
+    font-size: 20px;
+}
+.left-menu
+{
+    position: fixed;
+    margin: 0;
+    border-radius: 10px;
+    padding: 18px;
+    background-color: var(--third_bg);
+    left: 7.5px;
+    width: calc(22.5% - 15px);
+    height: 60px ;
+}
+.right-menu
+{
+    position: fixed;
+    margin: 0;
+    border-radius: 10px;
+    padding: 18px;
+    background-color: var(--third_bg);
+    right: 7.5px;
+    width: calc(22.5% - 15px);
+    height: 60px ;
+}
+.translation-content-left
+{
+    position: fixed;
+    margin: 0;
+    border-radius: 10px;
+    padding: 18px;
+    background-color: var(--third_bg);
+    left: 7.5px;
+    margin-top: 70px;
+    width: calc(22.5% - 15px);
+    height: calc(100vh - 90px) ;
+}
+
+#translation-ar {
+    margin: 0;
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    /* Adjust the formula below to suit your specific needs */
+    font-size: 20px;
+}
+
+.translation-content-right
+{
+    position: fixed;
+    margin: 0;
+    border-radius: 10px;
+    padding: 18px;
+    background-color: var(--third_bg);
+    right: 7.5px;
+    margin-top: 70px;
+    width: calc(22.5% - 15px);
+    height: calc(100vh - 90px) ;
+}
+
+
+.reem-kufi {
+  font-family: "Reem Kufi Fun", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+  

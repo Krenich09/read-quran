@@ -1,0 +1,20 @@
+{
+  "name": "quranin30days",
+  "version": "1.0.0",
+  "description": "A webapp to read Quran in 30 days.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Krenich",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
