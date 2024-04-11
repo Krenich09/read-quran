@@ -45,32 +45,29 @@ function renderJuzTemplate(juzData) {
     // Start building the HTML content
     const juzNum = juzData.number;
     let htmlContent = `
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@100..900&display=swap" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Reddit+Mono:wght@200..900&family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amiri+Quran&family=Noto+Kufi+Arabic:wght@100..900&family=Recursive:wght@300..1000&family=Reddit+Mono:wght@200..900&family=Reem+Kufi+Fun:wght@400..700&display=swap" rel="stylesheet">
+        <script type="text/javascript" src="https://livejs.com/live.js"></script>
         <title>Quran الجزء ${juzNum}</title>
         <link rel="stylesheet" href="/styles.css">
         <body>
         <div class="left-menu">
         </div>
         <div class="translation-content-left">
-            <p id="translation-en"></p>
+            <p id="translation-en" class="font-reddit-mono"></p>
         </div>
         <div class="right-menu">
         </div>
         <div class="translation-content-right">
-            <p id="translation-ar"></p>
+            <p id="translation-ar" class="font-noto-kufi"></p>
         </div>
         <div class="content">
         `;
         htmlContent += `<script src="index.js"></script>`;
         
         // Loop through each ayah and append its number and text to the HTML content
-        htmlContent += `<div class="ayah amiri-quran-regular">`
+        htmlContent += `<div class="ayah font-amiri-quran-regular">`
         juzData.ayahs.forEach(ayah => {
             if(ayah.surah.englishName == 'Al-Faatiha' || ayah.surah.englishName == 'At-Tawba')
             {
@@ -83,7 +80,7 @@ function renderJuzTemplate(juzData) {
             {
                 if (ayah.numberInSurah === 1) { // Add Bismillah and Surah name for the first ayah of each surah
                     htmlContent += `<h2 class="title">${ayah.surah.name}</h2>`;
-                    htmlContent += `<span class="title reem-kufi">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ </span>`;
+                    htmlContent += `<span class="title font-reem-kufi">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ </span>`;
                 }
                 if(ayah.numberInSurah == 1)
                 {

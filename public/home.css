@@ -1,0 +1,166 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+header {
+    z-index: 999;
+    position: sticky;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+main {
+    background-color:#33333361;
+    padding: 20px;
+    padding-top: 0;
+    flex-grow: 1;
+}
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+
+.content-2
+{
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.content-1 {
+    background-color: #ffffff;
+    margin-top: 10%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+
+.juz-list {
+    margin-bottom: 40px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.juz-list li {
+    margin-bottom: 10px;
+}
+
+.juz-list li a {
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.1s ease;
+}
+
+.juz-list li a:hover {
+    background-color: #0056b3;
+}
+
+
+.original-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    border-radius: 10px;
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    box-shadow: -2px 2px 3px 0px rgba(0, 0, 0, 0.2);
+    background-color: #1976d2;
+}
+  
+.original-button:hover {
+    opacity: .7;
+}
+
+.juz-list-container {
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    background-color: #dfdfdf;
+}
+
+.juz-list-container.expanded {
+    height: auto;
+}
+
+.dropdown-button {
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    background-color: #52b47b;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.dropdown-button:hover {
+    background-color: rgb(15, 98, 77);
+}
+
+/* FONTS */
+
+
+.font-recursive {
+    font-family: "Recursive", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CASL" 0,
+        "CRSV" 0.5,
+        "MONO" 0;
+}
+.font-noto-kufi {
+    font-family: "Noto Kufi Arabic", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.font-amiri-quran-regular {
+    font-family: "Amiri Quran", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.font-reddit-mono {
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+.font-reem-kufi {
+    font-family: "Reem Kufi Fun", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+  
