@@ -53,6 +53,7 @@ function renderJuzTemplate(juzData) {
         <link rel="stylesheet" href="/styles.css">
         <body>
         <div class="left-menu">
+
         </div>
         <div class="translation-content-left">
             <p id="translation-en" class="font-reddit-mono"></p>
@@ -80,7 +81,7 @@ function renderJuzTemplate(juzData) {
             {
                 if (ayah.numberInSurah === 1) { // Add Bismillah and Surah name for the first ayah of each surah
                     htmlContent += `<h2 class="title">${ayah.surah.name}</h2>`;
-                    htmlContent += `<span class="title font-reem-kufi">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ </span>`;
+                    htmlContent += `<span class="bismilah title font-reem-kufi">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ </span>`;
                 }
                 if(ayah.numberInSurah == 1)
                 {

@@ -3,17 +3,24 @@
     --min-font-size: 2px; 
     --max-font-size: 3px;
 
-    --main_bg: #3b4f46;
-    --second_bg: #ECECEC;
-    --third_bg: #F1FFFA;
-    
 
+    --main: #C98B29;
+    --bg1: #151D1C;
+    --bg2: #192322;
+    --bg3: #272A21;
+    --bg4: #21241C;
+    --text1: #31625E;
+    --text1rgba: 49, 98, 94;
+    --text2: #5CA356;
+    --textwhite: #C7BAB2;
+    --textwhite2: #806D62;
 }
+
 body
 {
     min-height: 100vh;
     margin: 0;
-    background-color: var(--main_bg);
+    background-color: var(--bg1);
 }
   
 .content {
@@ -21,7 +28,8 @@ body
     padding: 30px;
     width: 55%;
     border-radius: 7px;
-    background-color: var(--third_bg);
+    background-color: var(--bg2);
+    color: var(--textwhite);
     display: flex;
     flex-direction: column; /* Align content vertically */
     justify-content: center; /* Center content horizontally */
@@ -31,6 +39,7 @@ body
 {
     display: flex;
     justify-content: center;
+    color: var(--text2);
 }
 
 .arabic-text
@@ -43,7 +52,7 @@ body
 }
 .arabic-text:hover
 {
-    color: #890808;
+    color: var(--text2);
 }
 
 
@@ -52,7 +61,10 @@ body
     align-items: center;
     text-align: center;
 }
-
+.bismilah
+{
+    color: var(--text1) !important;
+}
 *
 {
     font-size: 35px;
@@ -64,7 +76,10 @@ h2
 .number
 {
     margin: 7px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--text1);
 }
+
 
 *
 {
@@ -75,6 +90,7 @@ h2
 #translation-en {
     margin: 0;
     font-size: 20px;
+    color: var(--textwhite2);
 }
 .left-menu
 {
@@ -82,7 +98,7 @@ h2
     margin: 0;
     border-radius: 10px;
     padding: 18px;
-    background-color: var(--third_bg);
+    background-color: var(--bg4);
     left: 7.5px;
     width: calc(22.5% - 15px);
     height: 60px ;
@@ -93,7 +109,7 @@ h2
     margin: 0;
     border-radius: 10px;
     padding: 18px;
-    background-color: var(--third_bg);
+    background-color: var(--bg4);
     right: 7.5px;
     width: calc(22.5% - 15px);
     height: 60px ;
@@ -104,7 +120,7 @@ h2
     margin: 0;
     border-radius: 10px;
     padding: 18px;
-    background-color: var(--third_bg);
+    background-color: var(--bg3);
     left: 7.5px;
     margin-top: 70px;
     width: calc(22.5% - 15px);
@@ -117,6 +133,7 @@ h2
     font-style: normal;
     /* Adjust the formula below to suit your specific needs */
     font-size: 20px;
+    color: var(--textwhite2);
 }
 
 .translation-content-right
@@ -125,7 +142,7 @@ h2
     margin: 0;
     border-radius: 10px;
     padding: 18px;
-    background-color: var(--third_bg);
+    background-color: var(--bg3);
     right: 7.5px;
     margin-top: 70px;
     width: calc(22.5% - 15px);
@@ -152,6 +169,13 @@ h2
     font-weight: 400;
     font-style: normal;
 }
+@supports not (-webkit-text-fill-color: initial) {
+/* Change the color of all text, including diacritics */
+    .font-amiri-quran-regular {
+        color: var(--main);
+    }
+}
+  
 .font-amiri-quran-regular {
     font-family: "Amiri Quran", serif;
     font-weight: 400;

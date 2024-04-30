@@ -1,3 +1,17 @@
+:root {
+    --main: #C98B29;
+    --bg1: #151D1C;
+    --bg2: #192322;
+    --bg3: #272A21;
+    --bg4: #21241C;
+    --text1: #31625E;
+    --text1rgba: 49, 98, 94;
+    --text2: #5CA356;
+    --textwhite: #C7BAB2;
+    --textwhite2: #806D62;
+}
+
+
 body {
     min-height: 100vh;
     display: flex;
@@ -15,12 +29,12 @@ header {
     left: 0;
     top: 0;
     width: 100%;
-    background-color: #333;
-    color: white;
+    background-color: var(--bg2);
+    color: var(--main);
     text-align: center;
 }
 main {
-    background-color:#33333361;
+    background-color:var(--bg1);
     padding: 20px;
     padding-top: 0;
     flex-grow: 1;
@@ -28,26 +42,43 @@ main {
 footer {
     margin-top: auto;
     width: 100%;
-    background-color: #333;
-    color: white;
+    background-color: var(--bg2);
+    color: var(--textwhite);
     text-align: center;
 }
 
 
 .content-2
 {
-    background-color: #fff;
+    background-color: var(--bg4);
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+.content-3
+{
+    background-color: var(--bg4);
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
 }
 .content-1 {
-    background-color: #ffffff;
+    background-color: var(--bg4);
     margin-top: 10%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    color: var(--textwhite);
+}
+#startPar
+{
+    color: var(--textwhite2);
+}
+.SectionTitle
+{
+    color: var(--textwhite)
 }
 
 
@@ -63,16 +94,19 @@ footer {
 
 .juz-list li a {
     display: block;
-    background-color: #007bff;
-    color: #fff;
+    background-color: var(--bg3);
+    color: var(--textwhite2);
     text-decoration: none;
     padding: 10px 20px;
+    opacity: 0.7;
     border-radius: 5px;
     transition: background-color 0.1s ease;
 }
 
 .juz-list li a:hover {
-    background-color: #0056b3;
+    color: var(--textwhite);
+    background-color: var(--bg3);
+    opacity: 1;
 }
 
 
@@ -82,7 +116,7 @@ footer {
     justify-content: center;
     line-height: 1;
     text-decoration: none;
-    color: #ffffff;
+    color: var(--textwhite);
     font-size: 18px;
     border-radius: 10px;
     width: 200px;
@@ -90,7 +124,7 @@ footer {
     font-weight: bold;
     transition: 0.3s;
     box-shadow: -2px 2px 3px 0px rgba(0, 0, 0, 0.2);
-    background-color: #1976d2;
+    background-color: var(--text1);
 }
   
 .original-button:hover {
@@ -104,7 +138,7 @@ footer {
     overflow: hidden;
     border-radius: 10px;
     position: relative;
-    background-color: #dfdfdf;
+    background-color: var(--bg4);
 }
 
 .juz-list-container.expanded {
@@ -115,17 +149,21 @@ footer {
     width: 100%;
     position:absolute;
     bottom: 0;
-    background-color: #52b47b;
-    color: white;
+    background-color: var(--text1);
+    color: var(--textwhite);
     border: none;
     padding: 5px 10px;
     cursor: pointer;
 }
 
 .dropdown-button:hover {
-    background-color: rgb(15, 98, 77);
+    opacity: 0.95;
+    color: white;
 }
-
+.smallText
+{
+    color: var(--textwhite2);
+}
 /* FONTS */
 
 
